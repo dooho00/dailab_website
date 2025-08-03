@@ -30,7 +30,7 @@
     <section class="relative flex hero-bg">
       <div class="w-full">
       <div id="site-header"></div>
-      <div class="grid grid-cols-2 lg:grid-cols-4 flex w-full pt-16 pb-28 px-6 items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 flex w-full pt-16 pb-24 px-6 items-center">
         <img
           src="images/lab_logo.png"
           alt="Lab Logo"
@@ -39,17 +39,17 @@
         <img
           src="images/kaist_logo.png"
           alt="KAIST Logo"
-          class="mx-auto w-40 object-contain lg:col-start-3"
+          class="hidden sm:block mx-auto w-40 object-contain lg:col-start-3"
         />
       </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mx-auto px-6 py-16">
-      <h2 class="text-4xl font-bold mb-8">About Us</h2>
+    <section id="about" class="container mx-auto px-6 py-8 sm:py-16">
+      <h2 class="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">About Us</h2>
       <div class="mx-auto space-y-4">
-        <p>
+        <p class="text-sm sm:text-md">
           We are committed to uncovering data-centric solutions to complex,
           real-world challenges by harnessing the power of artificial
           intelligence. Our research areas span a multitude of problem levels,
@@ -57,7 +57,7 @@
           analysis, recommender systems, and anomaly detection, to theoretical
           constructs within machine learning and probabilistic inference.
         </p>
-        <p class="text-red-600 text-sm">
+        <p class="text-red-600 text-xs sm:text-sm">
           Our research group is actively searching for talented and enthusiastic
           students. Please check
           <a
@@ -71,14 +71,11 @@
       </div>
     </section>
 
-    <!-- Divider -->
-    <div class="container border-t-2 border-gray-300 mx-auto"></div>
-
     <!-- Research Section -->
-    <section id="research" class="pt-16 pb-20">
+    <section id="research" class="pb-10 sm:pb-20">
       <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-light text-gray-400">Research</h2>
-        <h2 class="text-4xl font-bold mb-8">Overview</h2>
+        <h2 class="text-2xl sm:text-4xl font-light text-gray-400">Research</h2>
+        <h2 class="text-2xl sm:text-4xl mb-4 sm:mb-8 font-bold">Overview</h2>
         <div id="research-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
       </div>
     </section>
@@ -87,7 +84,7 @@
 
     <script>
       // Fetch and render research topics
-      fetch("research.json")
+      fetch("data/research.json")
         .then((response) => response.json())
         .then((research) => {
           const container = document.getElementById("research-list");

@@ -14,105 +14,115 @@
     <section class="relative flex hero-bg">
       <div class="w-full">
         <div id="site-header"></div>
-        <div class="container mx-auto px-6 py-12 text-white text-4xl font-bold">
+        <div class="container mx-auto px-6 py-6 sm:py-12 text-white text-3xl sm:text-4xl font-bold">
           Members
         </div>
       </div>
     </section>
 
     <main class="container mx-auto px-6">
-      <section class="py-16">
-        <h2 class="text-4xl font-light text-gray-400">Director</h2>
-        <h2 class="text-4xl font-bold mb-6">Jaemin Yoo</h2>
+      <section class="py-8 sm:py-16">
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold ">Director</h2>
         <div
-          class="bg-white shadow-md rounded-lg p-6 mx-auto flex flex-col md:flex-row items-center md:items-start gap-6"
+          class="bg-white shadow-md rounded-lg p-6 mx-auto flex flex-col md:flex-row items-center gap-6"
         >
           <img
             src="images/jaemin.jpg"
             alt="Jaemin Yoo"
-            class="w-64 h-64 object-cover"
+            class="w-52 object-cover"
           />
-          <div class="text-center md:text-left">
-            <p class="text-gray-600">
-              Assistant Professor, School of Electrical Engineering, KAIST
-            </p>
-            <p class="text-gray-600">
-              Adjunct Professor, Kim Jaechul Graduate School of AI, KAIST
-            </p>
-            <div class="mt-4 text-sm space-y-1">
-              <p><strong>Background:</strong></p>
-              <p>B.S. in CSE at Seoul National University (2016)</p>
-              <p>Ph.D. in CSE at Seoul National University (2022)</p>
-              <p>Postdoc at Carnegie Mellon University (2022 - 2023)</p>
-              <p>
-                <strong>Email:</strong>
-                <a
-                  href="mailto:jaemin@kaist.ac.kr"
-                  class="text-blue-600 underline"
-                  >jaemin@kaist.ac.kr</a
-                >
-              </p>
-              <p>
-                <strong>Web:</strong>
+          <div class="text-left md:text-left flex flex-col gap-3">
+
+            <div><p class="text-2xl sm:text-3xl font-medium"><strong>Jaemin Yoo</strong></p></div>
+            
+            <div class="text-sm">
+              <p><span class="font-semibold">Assistant Professor</span>, School of Electrical Engineering, KAIST</p>
+              <p><span class="font-semibold">Adjunct Professor</span>, Kim Jaechul Graduate School of AI, KAIST</p>
+            </div>
+
+            <div class="text-sm">
+              <p><span class="font-semibold">Background:</span></p>
+              <ol class="list-disc pl-6">
+                <li>B.S. in CSE at Seoul National University<span class="hidden sm:inline-block"> (2016)</span></li>
+                <li>Ph.D. in CSE at Seoul National University<span class="hidden sm:inline-block"> (2022)</span></li>
+                <li>Postdoc at Carnegie Mellon University<span class="hidden sm:inline-block"> (2022 - 2023)</span></li>
+              </ol>
+            </div>
+            
+            <div class="text-sm">
+              <p><span class="font-semibold">Email:</span>
+              <a
+                href="mailto:jaemin@kaist.ac.kr"
+                class="text-blue-500 hover:text-blue-800 transition underline"
+                >jaemin@kaist.ac.kr</a
+              ></p>
+              <p><span class="font-semibold">Web:</span>
                 <a
                   href="https://jaeminyoo.github.io/"
                   target="_blank"
-                  class="text-blue-600 underline"
+                  class="text-blue-500 hover:text-blue-800 transition underline"
                   >https://jaeminyoo.github.io/</a
-                >
-              </p>
+                ></p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="py-16">
-        <h2 class="text-4xl font-light text-gray-400">Graduate</h2>
-        <h2 class="text-4xl font-bold mb-6">Students</h2>
+      <section class="pb-16">
+        <h2 class="text-3xl sm:text-4xl font-light text-gray-400">Graduate</h2>
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6  font-bold mb-6">Students</h2>
         <div
           id="graduate_students"
-          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8"
         >
           <!-- Student cards will be injected here -->
         </div>
       </section>
 
-      <section class="py-16">
-        <h2 class="text-4xl font-light text-gray-400">Undergraduate</h2>
-        <h2 class="text-4xl font-bold mb-6">Interns</h2>
+      <section class="pb-8 sm:pb-16">
+        <h2 class="text-3xl sm:text-4xl font-light text-gray-400">Undergraduate</h2>
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold">Interns</h2>
         <div
           id="undergraduate_interns"
-          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8"
         >
           <!-- Student cards will be injected here -->
         </div>
       </section>
 
-      <section class="py-16">
-        <h2 class="text-4xl font-light text-gray-400">Alumni</h2>
-        <div class="mb-4">
-          <button
-            id="toggle-graduate-alumni"
-            class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
-          >
-            Graduate Alumni
-          </button>
-          <div
-            id="graduate-alumni-list"
-            class="mt-4 hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
-          ></div>
-        </div>
-        <div>
-          <button
-            id="toggle-undergraduate-alumni"
-            class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
-          >
-            Undergraduate Alumni
-          </button>
-          <div
-            id="undergraduate-alumni-list"
-            class="mt-4 hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
-          ></div>
+      <section class="pb-8 sm:pb-16">
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold">Alumni</h2>
+        <div class="space-y-4">
+          <div class="border border-gray-200 rounded-lg">
+            <button
+              id="toggle-graduate-alumni"
+              class="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-200 transition-colors"
+            >
+              <span class="text-lg font-semibold">Graduate Alumni</span>
+              <svg id="graduate-arrow" class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <div
+              id="graduate-alumni-list"
+              class="hidden px-6 pb-4 space-y-2"
+            ></div>
+          </div>
+          <div class="border border-gray-200 rounded-lg">
+            <button
+              id="toggle-undergraduate-alumni"
+              class="w-full p-3 sm:p-4 text-left flex items-center justify-between hover:bg-gray-200 transition-colors"
+            >
+              <span class="text-lg font-semibold">Undergraduate Alumni</span>
+              <svg id="undergraduate-arrow" class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <div
+              id="undergraduate-alumni-list"
+              class="hidden px-6 pb-4 space-y-2"
+            ></div>
+          </div>
         </div>
       </section>
     </main>
@@ -127,19 +137,25 @@
           graduate_students.forEach(
             ({ name, role, image, research, email, homepage }) => {
               const card = document.createElement("div");
-              card.className = "bg-white shadow-md rounded-lg p-6 text-center";
+              card.className = "bg-white shadow-md rounded-lg p-4 sm:p-6 text-center";
               card.innerHTML = `
-              <img src="${image}" alt="${name}" class="w-36 h-36 mb-2 mx-auto object-cover"> 
-              <h3 class="text-lg font-semibold">${name} ${
-                homepage
-                  ? `<a href="${homepage}" class="" target="_blank">🔗</a>`
-                  : ""
-              }</h3>  
-              <p class="text-sm text-gray-600">${role}</p>
-              <p class="mt-2 text-xs">${research}</p>
+              <img src="${image}" alt="${name}" class="sm:w-36 sm:h-36 mb-2 mx-auto object-cover"> 
+              <div class="flex items-center justify-center gap-1">
+                <h3 class="text-sm sm:text-lg font-semibold">${name}</h3>
+                ${
+                  homepage
+                    ? `<a href="${homepage}" class="text-neutral-500 hover:text-neutral-800 transition" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 48 48" fill="currentColor" class="w-4 h-4">
+                        <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"></path>
+                      </svg></a>`
+                    : ""
+                }
+              </div>
+              <p class="text-xs sm:text-sm text-gray-600">${role}</p>
+              <p class="hidden sm:block mt-2 text-xs">${research}</p>
               <a
                   href="mailto:${email}"
-                  class="underline mt-1 text-xs"
+                  class="hidden sm:block underline mt-1 text-xs text-blue-500 hover:text-blue-800"
                   >${email}</a
                 >
             `;
@@ -153,10 +169,10 @@
           const container = document.getElementById("undergraduate_interns");
           undergraduate_interns.forEach(({ name, association }) => {
             const card = document.createElement("div");
-            card.className = "bg-white shadow-md rounded-lg p-6 text-center";
+            card.className = "bg-white shadow-md rounded-lg p-2 sm:p-4 text-center";
             card.innerHTML = `
-              <h3 class="text-lg font-semibold mb-2">${name}</h3>
-              <p class="text-sm text-gray-600">${association}</p>
+              <h3 class="text-sm sm:text-md font-semibold">${name}</h3>
+              <p class="text-xs sm:text-sm text-gray-600">${association}</p>
             `;
             container.appendChild(card);
           });
@@ -167,53 +183,113 @@
           // Graduate alumni
           const gradBtn = document.getElementById("toggle-graduate-alumni");
           const gradList = document.getElementById("graduate-alumni-list");
+          const gradArrow = document.getElementById("graduate-arrow");
           gradBtn.addEventListener("click", () => {
             gradList.classList.toggle("hidden");
+            gradArrow.classList.toggle("rotate-90");
           });
-          gradList.className = "mt-4 hidden";
           alumni.graduate_students.forEach(({ name, association }) => {
-            const row = document.createElement("div");
-            row.className = "border-b py-2";
-            const nameBtn = document.createElement("button");
-            nameBtn.className = "text-lg font-semibold text-left w-full";
-            nameBtn.textContent = name;
-            const assocDiv = document.createElement("div");
-            assocDiv.className = "text-sm text-gray-600 pl-4 hidden";
-            assocDiv.textContent = association;
-            nameBtn.addEventListener("click", () => {
-              assocDiv.classList.toggle("hidden");
-            });
-            row.appendChild(nameBtn);
-            row.appendChild(assocDiv);
-            gradList.appendChild(row);
+            const item = document.createElement("div");
+            item.className = "flex justify-between items-center py-2 border-b border-gray-200 last:border-b-0";
+            item.innerHTML = `
+              <span class="font-medium text-sm sm:text-md">${name}</span>
+              <span class="text-sm text-gray-600">${association}</span>
+            `;
+            gradList.appendChild(item);
           });
 
-          // Undergraduate alumni
+          // Undergraduate alumni - grouped by year
           const undergradBtn = document.getElementById(
             "toggle-undergraduate-alumni"
           );
           const undergradList = document.getElementById(
             "undergraduate-alumni-list"
           );
+          const undergradArrow = document.getElementById("undergraduate-arrow");
           undergradBtn.addEventListener("click", () => {
             undergradList.classList.toggle("hidden");
+            undergradArrow.classList.toggle("rotate-90");
           });
-          undergradList.className = "mt-4 hidden";
+          
+          // Group by end year
+          const groupedByYear = {};
           alumni.undergraduate_interns.forEach(({ name, association }) => {
-            const row = document.createElement("div");
-            row.className = "border-b py-2";
-            const nameBtn = document.createElement("button");
-            nameBtn.className = "text-lg font-semibold text-left w-full";
-            nameBtn.textContent = name;
-            const assocDiv = document.createElement("div");
-            assocDiv.className = "text-sm text-gray-600 pl-4 hidden";
-            assocDiv.textContent = association;
-            nameBtn.addEventListener("click", () => {
-              assocDiv.classList.toggle("hidden");
+            // Extract period from association
+            const match = association.match(/\(([^)]+)\)$/);
+            const period = match ? match[1] : "Unknown";
+            
+            // Extract association without period
+            const assocWithoutPeriod = association.replace(/\([^)]+\)$/, '').trim();
+            
+            // Get end year from period
+            const endYear = getEndYear(period);
+            
+            if (!groupedByYear[endYear]) {
+              groupedByYear[endYear] = [];
+            }
+            groupedByYear[endYear].push({ 
+              name, 
+              association: assocWithoutPeriod, 
+              period 
             });
-            row.appendChild(nameBtn);
-            row.appendChild(assocDiv);
-            undergradList.appendChild(row);
+          });
+          
+          // Function to extract end year from period
+          function getEndYear(period) {
+            // Handle ranges like "Summer 2024 - Fall 2024"
+            if (period.includes(" - ")) {
+              const endPeriod = period.split(" - ")[1].trim();
+              const yearMatch = endPeriod.match(/(\d{4})/);
+              return yearMatch ? yearMatch[1] : "Unknown";
+            } else {
+              // Single period like "Spring 2024"
+              const yearMatch = period.match(/(\d{4})/);
+              return yearMatch ? yearMatch[1] : "Unknown";
+            }
+          }
+          
+          // Sort years in descending order
+          const sortedYears = Object.keys(groupedByYear).sort((a, b) => {
+            if (a === "Unknown") return 1;
+            if (b === "Unknown") return -1;
+            return parseInt(b) - parseInt(a);
+          });
+          
+          sortedYears.forEach(year => {
+            const yearDiv = document.createElement("div");
+            yearDiv.className = "border border-gray-200 rounded mb-2";
+            
+            const yearButton = document.createElement("button");
+            yearButton.className = "w-full px-4 py-2 text-left flex items-center justify-between hover:bg-gray-50 transition-colors";
+            yearButton.innerHTML = `
+              <span class="font-medium text-gray-700">${year}</span>
+              <svg class="year-arrow w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            `;
+            
+            const yearContent = document.createElement("div");
+            yearContent.className = "hidden px-4 pb-2 space-y-1";
+            
+            groupedByYear[year].forEach(({ name, association, period }) => {
+              const item = document.createElement("div");
+              item.className = "grid grid-cols-3 gap-4 py-2 text-sm border-b border-gray-50 last:border-b-0";
+              item.innerHTML = `
+                <span class="font-medium">${name}</span>
+                <span class="text-gray-600">${association}</span>
+                <span class="text-gray-500 text-xs">${period}</span>
+              `;
+              yearContent.appendChild(item);
+            });
+            
+            yearButton.addEventListener("click", () => {
+              yearContent.classList.toggle("hidden");
+              yearButton.querySelector('.year-arrow').classList.toggle("rotate-90");
+            });
+            
+            yearDiv.appendChild(yearButton);
+            yearDiv.appendChild(yearContent);
+            undergradList.appendChild(yearDiv);
           });
         });
     </script>

@@ -5,14 +5,14 @@
     "image": "images/doyun.jpg",
     "research": "Self-supervised learning for recommender systems",
     "email": "doyun.choi@kaist.ac.kr",
-    "homepage": "https://dai.kaist.ac.kr/members"
+    "homepage": ""
   },
   {
     "name": "Cheonwoo Lee",
     "role": "Master's Student",
     "image": "images/cheonwoo.jpg",
     "research": "Machine learning on irregular time series",
-    "email": "",
+    "email": "cheonwoo.lee@kaist.ac.kr",
     "homepage": ""
   },
   {
@@ -20,7 +20,7 @@
     "role": "Master's Student",
     "image": "images/taewook.jpg",
     "research": "Interpretable graph neural networks",
-    "email": "",
+    "email": "htw0618@kaist.ac.kr",
     "homepage": ""
   },
   {
@@ -28,7 +28,7 @@
     "role": "Master's Student",
     "image": "images/myeong.jpg",
     "research": "GNN expressivity, Graph generation",
-    "email": "",
+    "email": "km021024@kaist.ac.kr",
     "homepage": ""
   },
   {
@@ -36,7 +36,7 @@
     "role": "Master's Student",
     "image": "images/chaewoon.jpg",
     "research": "Self-supervised learning on hypergraphs",
-    "email": "",
+    "email": "cw1203@kaist.ac.kr",
     "homepage": ""
   },
   {
@@ -44,7 +44,7 @@
     "role": "Master's Student",
     "image": "images/dooho.jpg",
     "research": "Graph neural networks, Graph Foundation Models",
-    "email": "",
-    "homepage": ""
+    "email": "dooho@kaist.ac.kr",
+    "homepage": "https://dooho00.github.io/"
   }
 ]

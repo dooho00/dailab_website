@@ -1,10 +1,26 @@
 {
   "graduate_students": [
-    { "name": "Alice Kim", "association": "KAIST EE" },
-    { "name": "Bob Park", "association": "KAIST CS" }
   ],
   "undergraduate_interns": [
-    { "name": "Chris Lee", "association": "KAIST EE" },
-    { "name": "Dana Choi", "association": "KAIST CS" }
+    { "name": "Sadik Adnan", "association": "KAIST Math (Spring 2025)" },
+    { "name": "Sangun Chung", "association": "KAIST EE (Spring 2025)" },
+    { "name": "Sungjoon Hwang", "association": "KAIST EE (Winter 2025)" },
+    { "name": "Juho Lee", "association": "KAIST EE (Winter 2025)" },
+    { "name": "Doyoung Heo", "association": "KAIST EE (Fall 2024)" },
+    { "name": "Jihwan Shin", "association": "KAIST EE (Summer 2024 - Fall 2024)" },
+    { "name": "Hyeoktae Kwon", "association": "KAIST EE (Spring 2024 - Fall 2024)" },
+    { "name": "Minsoo Jeon", "association": "KAIST CS (Summer 2024)" },
+    { "name": "Yumin Cho", "association": "KAIST EE (Summer 2024)" },
+    { "name": "Chanryeol Lee", "association": "KAIST EE (Winter 2024 - Spring 2024)" },
+    { "name": "Seongjun Hong", "association": "KAIST CS (Winter 2024 - Spring 2024)" },
+    { "name": "Kwangbin Lee", "association": "KAIST EE (Spring 2024)" },
+    { "name": "Jaemin Han", "association": "KAIST Math (Spring 2024)" },
+    { "name": "Jihyuk Park", "association": "KAIST EE (Fall 2023)" },
+    { "name": "Arsen Adilkhan", "association": "KAIST CS (Fall 2023)" },
+    { "name": "Jaemin Choi", "association": "KAIST CBE (Fall 2023)" },
+    { "name": "Mingyu Kim", "association": "KAIST EE (Fall 2023)" },
+    { "name": "Nishant Nepal", "association": "KAIST CS (Fall 2023)" },
+    { "name": "Seongjae Seo", "association": "KAIST ISysE (Fall 2023)" },
+    { "name": "Tivan Varghese George", "association": "KAIST CS (Fall 2023)" }
   ]
 }
