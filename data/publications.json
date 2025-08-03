@@ -7,6 +7,7 @@
       "Lingxiao Zhao",
       "Leman Akoglu"
     ],
+    "is_lab_member":[true, false, false],
     "venue": "KDD 2025",
     "links": {
       "paper": "https://arxiv.org/abs/2306.12033",
@@ -28,6 +29,7 @@
       "Cheonwoo Lee",
       "Jaemin Yoo"
     ],
+    "is_lab_member":[true, true, true, true, true],
     "venue": "ICML 2025",
     "links": {
       "paper": "https://arxiv.org/pdf/2505.20840",
@@ -47,6 +49,7 @@
       "Jaemin Yoo",
       "Won-Yong Shin"
     ],
+    "is_lab_member":[false, true, false],
     "venue": "WWW 2025",
     "links": {
       "paper": "https://arxiv.org/pdf/2502.09046",
@@ -69,6 +72,7 @@
       "Jaemin Yoo",
       "Leman Akoglu"
     ],
+    "is_lab_member":[false, false, false, false, true, false],
     "venue": "SDM 2025",
     "links": {
       "paper": "https://arxiv.org/pdf/2404.02865",
@@ -92,6 +96,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, false, false, false, true, false],
     "venue": "NeurIPS 2024",
     "links": {
       "paper": "https://arxiv.org/pdf/2410.20366",
@@ -114,6 +119,7 @@
       "Jiliang Tang",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, false, true, false, false],
     "venue": "ICML 2024",
     "links": {
       "paper": "https://arxiv.org/pdf/2402.04621",
@@ -134,6 +140,7 @@
       "Jaemin Yoo",
       "Christos Faloutsos"
     ],
+    "is_lab_member":[false, false, true, false],
     "venue": "PAKDD 2024",
     "links": {
       "paper": "https://arxiv.org/pdf/2301.00270",
@@ -156,6 +163,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, false, false, true, false],
     "venue": "ICLR 2024",
     "links": {
       "paper": "https://arxiv.org/pdf/2404.00638",
@@ -178,6 +186,7 @@
       "U Kang",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, true, false, false, false, false],
     "venue": "Transactions on Knowledge Discovery from Data",
     "links": {
       "paper": "http://dmlab.kaist.ac.kr/~kijungs/papers/midasTKDD2024.pdf",
@@ -197,6 +206,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, true, false],
     "venue": "KDD 2023",
     "links": {
       "paper": null,
@@ -215,6 +225,7 @@
       "Leman Akoglu",
       "Jaemin Yoo"
     ],
+    "is_lab_member":[false, true],
     "venue": "BigData 2023 (Short)",
     "links": {
       "paper": "https://arxiv.org/pdf/2308.14380.pdf",
@@ -235,6 +246,7 @@
       "Lingxiao Zhao",
       "Leman Akoglu"
     ],
+    "is_lab_member":[true, false, false, false],
     "venue": "ECML PKDD 2023",
     "links": {
       "paper": "https://arxiv.org/pdf/2307.06534.pdf",
@@ -255,6 +267,7 @@
       "Shubhranshu Shekhar",
       "Christos Faloutsos"
     ],
+    "is_lab_member":[true, false, false, false],
     "venue": "KDD 2023",
     "links": {
       "paper": "https://arxiv.org/pdf/2210.04081.pdf",
@@ -276,6 +289,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, false, true, false],
     "venue": "KDD 2023",
     "links": {
       "paper": "https://arxiv.org/pdf/2306.02358.pdf",
@@ -296,6 +310,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, true, false],
     "venue": "KDD 2023",
     "links": {
       "paper": "https://arxiv.org/pdf/2306.03032.pdf",
@@ -316,6 +331,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, true, false],
     "venue": "ICML 2023",
     "links": {
       "paper": "https://arxiv.org/pdf/2306.02376.pdf",
@@ -335,6 +351,7 @@
       "Tiancheng Zhao",
       "Leman Akoglu"
     ],
+    "is_lab_member":[true, false, false],
     "venue": "Transactions on Machine Learning Research",
     "links": {
       "paper": "https://arxiv.org/pdf/2208.07734.pdf",
@@ -355,6 +372,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, true, false],
     "venue": "Data Mining and Knowledge Discovery",
     "links": {
       "paper": "https://arxiv.org/pdf/2210.05328.pdf",
@@ -374,6 +392,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, true, false],
     "venue": "ICDM 2022",
     "links": {
       "paper": null,
@@ -391,6 +410,7 @@
     "authors": [
       "Jaemin Yoo"
     ],
+    "is_lab_member":[true],
     "venue": "Ph.D. Thesis, Seoul National University",
     "links": {
       "paper": null,
@@ -412,6 +432,7 @@
       "Jihyeong Jeon",
       "U Kang"
     ],
+    "is_lab_member":[false, true, false, false, false],
     "venue": "BigData 2022",
     "links": {
       "paper": "resources/papers/SounYCJK22.pdf",
@@ -432,6 +453,7 @@
       "Jaemin Yoo",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, false, true, false],
     "venue": "ICDM 2022",
     "links": {
       "paper": "https://arxiv.org/pdf/2210.05328",
@@ -452,6 +474,7 @@
       "Jinhong Jung",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false, false],
     "venue": "KDD 2022",
     "links": {
       "paper": "https://arxiv.org/pdf/2206.04516.pdf",
@@ -471,6 +494,7 @@
       "Sooyeon Shim",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false],
     "venue": "WWW 2022",
     "links": {
       "paper": "https://arxiv.org/pdf/2202.10107.pdf",
@@ -493,6 +517,7 @@
       "U Kang",
       "Kijung Shin"
     ],
+    "is_lab_member":[false, true, false, false, false, false],
     "venue": "WWW 2022",
     "links": {
       "paper": "https://arxiv.org/pdf/2202.01587.pdf",
@@ -511,6 +536,7 @@
       "Jaemin Yoo",
       "Lee Sael"
     ],
+    "is_lab_member":[true, false],
     "venue": "SDM 2022",
     "links": {
       "paper": "https://arxiv.org/pdf/2202.10677.pdf",
@@ -533,6 +559,7 @@
       "Changwon Jang",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false, false, false, false],
     "venue": "Knowledge and Information Systems",
     "links": {
       "paper": "https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf",
@@ -552,6 +579,7 @@
       "Jaemin Yoo",
       "U Kang"
     ],
+    "is_lab_member":[false, true, false],
     "venue": "PLOS ONE",
     "links": {
       "paper": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265001",
@@ -574,6 +602,7 @@
       "Changwon Jang",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false, false, false, false],
     "venue": "ICDM 2021",
     "links": {
       "paper": "resources/papers/YooKYKJK21.pdf",
@@ -594,6 +623,7 @@
       "Yong-chan Park",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false, false],
     "venue": "KDD 2021",
     "links": {
       "paper": "resources/papers/YooSPK21.pdf",
@@ -612,6 +642,7 @@
       "Jaemin Yoo",
       "Lee Sael"
     ],
+    "is_lab_member":[true, false],
     "venue": "PAKDD 2021",
     "links": {
       "paper": "resources/papers/YooS21.pdf",
@@ -630,6 +661,7 @@
       "Jaemin Yoo",
       "U Kang"
     ],
+    "is_lab_member":[true, false],
     "venue": "SDM 2021",
     "links": {
       "paper": "resources/papers/YooK21.pdf",
@@ -651,6 +683,7 @@
       "Giorgio Corani",
       "Marco Zaffalon"
     ],
+    "is_lab_member":[true, false, false, false, false],
     "venue": "WSDM 2020",
     "links": {
       "paper": "resources/papers/YooKSCZ20.pdf",
@@ -671,6 +704,7 @@
       "Taebum Kim",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false, false],
     "venue": "NeurIPS 2019",
     "links": {
       "paper": "https://papers.nips.cc/paper/2019/file/596f713f9a7376fe90a62abaaedecc2d-Paper.pdf",
@@ -689,6 +723,7 @@
       "Jaemin Yoo",
       "Lee Sael"
     ],
+    "is_lab_member":[true, false],
     "venue": "ICDM 2019",
     "links": {
       "paper": "resources/papers/YooS19.pdf",
@@ -708,6 +743,7 @@
       "Hyunsik Jeon",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false],
     "venue": "IJCAI 2019",
     "links": {
       "paper": "https://www.ijcai.org/proceedings/2019/0580.pdf",
@@ -727,6 +763,7 @@
       "Jaemin Yoo",
       "U Kang"
     ],
+    "is_lab_member":[false, true, false],
     "venue": "WSDM 2018",
     "links": {
       "paper": "resources/papers/JoYK18.pdf",
@@ -746,6 +783,7 @@
       "Saehan Jo",
       "U Kang"
     ],
+    "is_lab_member":[true, false, false],
     "venue": "ICDM 2017",
     "links": {
       "paper": "resources/papers/YooJK17.pdf",
@@ -767,6 +805,7 @@
       "Jaemin Yoo",
       "U Kang"
     ],
+    "is_lab_member":[false, false, false, true, false],
     "venue": "International Journal of Approximate Reasoning",
     "links": {
       "paper": "https://dl.acm.org/citation.cfm?id=3199356",
