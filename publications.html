@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications — DAI Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <div id="site-header" class="hero-bg"></div>
+    <script src="include-header-footer.js"></script>
+
+    <main class="container mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-8">Publications</h2>
+      <div id="pub-list" class="space-y-4"></div>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script>
+      fetch("publications.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const container = document.getElementById("pub-list");
+          let currentYear = null;
+
+          data.forEach((pub) => {
+            if (pub.year !== currentYear) {
+              const yearHeader = document.createElement("h3");
+              yearHeader.textContent = pub.year;
+              yearHeader.className = "text-2xl font-semibold mt-10";
+              container.appendChild(yearHeader);
+              currentYear = pub.year;
+            }
+
+            const item = document.createElement("div");
+            item.className = "bg-white p-4 rounded-lg shadow";
+
+            const title = document.createElement("div");
+            title.className = "font-semibold text-lg mb-1";
+            title.textContent = pub.title;
+
+            const authors = document.createElement("div");
+            authors.className = "text-sm text-gray-700 mb-1";
+            authors.textContent = pub.authors.join(", ");
+
+            const venue = document.createElement("div");
+            venue.className =
+              "text-sm italic text-gray-500 mb-1 inline-block font-semibold";
+            venue.textContent = pub.venue;
+
+            const links = document.createElement("span");
+            links.className = "text-sm space-x-2 ml-2 inline-block";
+            for (const [label, href] of Object.entries(pub.links)) {
+              if (href) {
+                const a = document.createElement("a");
+                a.href = href;
+                a.className = "text-blue-600 hover:underline";
+                a.target = "_blank";
+                a.textContent = label;
+                links.appendChild(a);
+              }
+            }
+
+            const venueLinksWrapper = document.createElement("div");
+            venueLinksWrapper.appendChild(venue);
+            venueLinksWrapper.appendChild(links);
+
+            item.appendChild(title);
+            item.appendChild(authors);
+            item.appendChild(venueLinksWrapper);
+            container.appendChild(item);
+          });
+        });
+    </script>
+  </body>
+</html>

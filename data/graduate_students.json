@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Doyun Choi",
+    "role": "Ph.D. Student",
+    "image": "images/doyun.jpg",
+    "research": "Self-supervised learning for recommender systems",
+    "email": "doyun.choi@kaist.ac.kr",
+    "homepage": "https://dai.kaist.ac.kr/members"
+  },
+  {
+    "name": "Cheonwoo Lee",
+    "role": "Master's Student",
+    "image": "images/cheonwoo.jpg",
+    "research": "Machine learning on irregular time series",
+    "email": "",
+    "homepage": ""
+  },
+  {
+    "name": "Taewook Ham",
+    "role": "Master's Student",
+    "image": "images/taewook.jpg",
+    "research": "Interpretable graph neural networks",
+    "email": "",
+    "homepage": ""
+  },
+  {
+    "name": "Myeong Kong",
+    "role": "Master's Student",
+    "image": "images/myeong.jpg",
+    "research": "GNN expressivity, Graph generation",
+    "email": "",
+    "homepage": ""
+  },
+  {
+    "name": "Chaewoon Bae",
+    "role": "Master's Student",
+    "image": "images/chaewoon.jpg",
+    "research": "Self-supervised learning on hypergraphs",
+    "email": "",
+    "homepage": ""
+  },
+  {
+    "name": "Dooho Lee",
+    "role": "Master's Student",
+    "image": "images/dooho.jpg",
+    "research": "Graph neural networks, Graph Foundation Models",
+    "email": "",
+    "homepage": ""
+  }
+]

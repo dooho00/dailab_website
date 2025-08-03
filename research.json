@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Graph Machine Learning",
+    "contents": "We design neural networks for graphs, combining GNNs with probabilistic inference and self-supervised learning to solve complex, real-world problems.",
+    "keywords": ["Probabilistic Inference", "Inductive Learning", "PU Learning", "Markov Graphs"],
+    "image": "images/research/graph_machine_learning.png"
+  },
+  {
+    "title": "ML on Time Series",
+    "contents": "We develop models to predict and analyze time series data, uncovering relationships between variables to improve machine learning in forecasting, finance and beyond.",
+    "keywords": ["Transformers", "Self-attention", "Stock Price Prediction", "Causal Inference"],
+    "image": "images/research/time_series.png"
+  },
+  {
+    "title": "Recommender Systems",
+    "contents": "We build personalized recommender systems that capture both user preferences and global trends, using graphs and time series for multi-modal recommendations.",
+    "keywords": ["Personalized recommendation", "Ranking", "Bipartite graphs", "Locality"],
+    "image": "images/research/rec_sys.png"
+  },
+  {
+    "title": "Anomaly Detection",
+    "contents": "We use self-supervised learning to detect unseen anomalies without labeled data, focusing on efficient data augmentation and robust model selection.",
+    "keywords": ["Data Augmentation", "Internal Performance Measures", "Model Selection"],
+    "image": "images/research/anomaly_detection.png"
+  }
+]

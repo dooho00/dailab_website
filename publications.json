@@ -1,0 +1,781 @@
+[
+  {
+    "year": "2025",
+    "title": "Self-Tuning Self-Supervised Image Anomaly Detection",
+    "authors": [
+      "Jaemin Yoo",
+      "Lingxiao Zhao",
+      "Leman Akoglu"
+    ],
+    "venue": "KDD 2025",
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.12033",
+      "code": "https://github.com/jaeminyoo/ST-SSAD",
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2025",
+    "title": "Aggregation Buffer: Revisiting DropEdge with a New Parameter Block",
+    "authors": [
+      "Dooho Lee",
+      "Myeong Kong",
+      "Sagad Hamid",
+      "Cheonwoo Lee",
+      "Jaemin Yoo"
+    ],
+    "venue": "ICML 2025",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.20840",
+      "code": "https://github.com/dooho00/agg-buffer",
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2025",
+    "title": "Criteria-Aware Graph Filtering: Extremely Fast Yet Accurate Multi-Criteria Recommendation",
+    "authors": [
+      "Jin-Duk Park",
+      "Jaemin Yoo",
+      "Won-Yong Shin"
+    ],
+    "venue": "WWW 2025",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2502.09046",
+      "code": "https://github.com/jindeok/CA-GF",
+      "bib": "https://dblp.org/rec/conf/www/ParkYS25.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2025",
+    "title": "TSA on AutoPilot: Self-tuning Self-supervised Time Series Anomaly Detection",
+    "authors": [
+      "Boje Deforce",
+      "Meng-Chieh Lee",
+      "Bart Baesens",
+      "Estefanía Serral Asensio",
+      "Jaemin Yoo",
+      "Leman Akoglu"
+    ],
+    "venue": "SDM 2025",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.02865",
+      "code": "https://github.com/B-Deforce/TSA-on-autoPilot",
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2024",
+    "title": "Rethinking Reconstruction-based Graph-level Anomaly Detectors: Limitations and a Remedy",
+    "authors": [
+      "Sunwoo Kim",
+      "Soo Yong Lee",
+      "Fanchen Bu",
+      "Shinhwan Kang",
+      "Kyungho Kim",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "NeurIPS 2024",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2410.20366",
+      "code": "https://github.com/kswoo97/GLAD_MUSE",
+      "bib": "https://dblp.uni-trier.de/rec/conf/nips/KimLBKKYS24.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2024",
+    "title": "Feature Distribution on Graph Topology Mediates the Effect of Graph Convolution: Homophily Perspective",
+    "authors": [
+      "Soo Yong Lee",
+      "Sunwoo Kim",
+      "Fanchen Bu",
+      "Jaemin Yoo",
+      "Jiliang Tang",
+      "Kijung Shin"
+    ],
+    "venue": "ICML 2024",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2402.04621",
+      "code": "https://github.com/syleeheal/AX-Dependence-Mediate-Graph-Conv",
+      "bib": "https://dblp.org/rec/conf/icml/LeeKBYTS24.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2024",
+    "title": "NetEffect: Discovery and Exploitation of Generalized Network Effects",
+    "authors": [
+      "Meng-Chieh Lee",
+      "Shubhranshu Shekhar",
+      "Jaemin Yoo",
+      "Christos Faloutsos"
+    ],
+    "venue": "PAKDD 2024",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2301.00270",
+      "code": "https://github.com/mengchillee/NetEffect",
+      "bib": "https://dblp.org/rec/conf/pakdd/LeeSYF24.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2024",
+    "title": "HypeBoy: Generative Self-Supervised Representation Learning on Hypergraphs",
+    "authors": [
+      "Sunwoo Kim",
+      "Shinhwan Kang",
+      "Fanchen Bu",
+      "Soo Yong Lee",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "ICLR 2024",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2404.00638",
+      "code": "https://github.com/kswoo97/hypeboy",
+      "bib": "https://dblp.org/rec/conf/iclr/KimKBLYS24.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2024",
+    "title": "Representative and Back-in-Time Sampling from Real-world Hypergraphs",
+    "authors": [
+      "Minyoung Choe",
+      "Jaemin Yoo",
+      "Geon Lee",
+      "Woonsung Baek",
+      "U Kang",
+      "Kijung Shin"
+    ],
+    "venue": "Transactions on Knowledge Discovery from Data",
+    "links": {
+      "paper": "http://dmlab.kaist.ac.kr/~kijungs/papers/midasTKDD2024.pdf",
+      "code": "https://github.com/jaeminyoo/SSL-AD",
+      "bib": "https://dblp.org/rec/journals/tkdd/ChoeYLBKS24.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
+    "authors": [
+      "Geon Lee",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "KDD 2023",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/conf/www/FiondaHAACCC0DE23.html?view=bibtex",
+      "slides": null,
+      "video": "https://www.youtube.com/watch?v=0mD7zOBx10M",
+      "web": "https://sites.google.com/view/hypergraph-tutorial",
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Self-Supervision for Tackling Unsupervised Anomaly Detection: Pitfalls and Opportunities",
+    "authors": [
+      "Leman Akoglu",
+      "Jaemin Yoo"
+    ],
+    "venue": "BigData 2023 (Short)",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2308.14380.pdf",
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/conf/bigdataconf/AkogluY23.html?view=bibtex",
+      "slides": "resources/slides/AkogluY23.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "DSV: An Alignment Validation Loss for Self-supervised Outlier Model Selection",
+    "authors": [
+      "Jaemin Yoo",
+      "Yue Zhao",
+      "Lingxiao Zhao",
+      "Leman Akoglu"
+    ],
+    "venue": "ECML PKDD 2023",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2307.06534.pdf",
+      "code": "https://github.com/jaeminyoo/DSV",
+      "bib": "https://dblp.org/rec/conf/pkdd/YooZZA23.html?view=bibtex",
+      "slides": "resources/slides/YooZZA23.pdf",
+      "video": null,
+      "web": null,
+      "poster": "resources/posters/YooZZA23.pdf"
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Less is More: SlimG for Accurate, Robust, and Interpretable Graph Mining",
+    "authors": [
+      "Jaemin Yoo*",
+      "Meng-Chieh Lee*",
+      "Shubhranshu Shekhar",
+      "Christos Faloutsos"
+    ],
+    "venue": "KDD 2023",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2210.04081.pdf",
+      "code": "https://github.com/mengchillee/SlimG",
+      "bib": "https://dblp.org/rec/conf/kdd/YooLSF23.html?view=bibtex",
+      "slides": "resources/slides/YooLSF23.pdf",
+      "video": "https://youtu.be/I--zo9w5gvQ",
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "How Transitive Are Real-World Group Interactions? - Measurement and Reproduction",
+    "authors": [
+      "Sunwoo Kim",
+      "Fanchen Bu",
+      "Minyoung Choe",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "KDD 2023",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2306.02358.pdf",
+      "code": "https://github.com/kswoo97/hypertrans",
+      "bib": "https://dblp.uni-trier.de/rec/conf/kdd/KimBCYS23.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Classification of Edge-dependent Labels of Nodes in Hypergraphs",
+    "authors": [
+      "Minyoung Choe",
+      "Sunwoo Kim",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "KDD 2023",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2306.03032.pdf",
+      "code": "https://github.com/young917/EdgeDependentNodeLabel",
+      "bib": "https://dblp.uni-trier.de/rec/conf/kdd/ChoeKYS23.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Towards Deep Attention in Graph Neural Networks: Problems and Remedies",
+    "authors": [
+      "Soo Yong Lee",
+      "Fanchen Bu",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "ICML 2023",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2306.02376.pdf",
+      "code": "https://github.com/syleeheal/AERO-GNN",
+      "bib": "https://dblp.uni-trier.de/rec/conf/icml/LeeBYS23.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Data Augmentation is a Hyperparameter: Cherry-picked Self-Supervision for Unsupervised Anomaly Detection is Creating the Illusion of Success",
+    "authors": [
+      "Jaemin Yoo",
+      "Tiancheng Zhao",
+      "Leman Akoglu"
+    ],
+    "venue": "Transactions on Machine Learning Research",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2208.07734.pdf",
+      "code": "https://github.com/jaeminyoo/SSL-AD",
+      "bib": "https://dblp.uni-trier.de/rec/journals/tmlr/YooZA23.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2023",
+    "title": "Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators",
+    "authors": [
+      "Sunwoo Kim",
+      "Minyoung Choe",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "Data Mining and Knowledge Discovery",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2210.05328.pdf",
+      "code": "https://github.com/kswoo97/hyprec",
+      "bib": "https://dblp.org/rec/journals/datamine/KimCYS23.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
+    "authors": [
+      "Geon Lee",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "ICDM 2022",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex",
+      "slides": null,
+      "video": "https://youtu.be/0mD7zOBx10M",
+      "web": "https://sites.google.com/view/hypergraph-tutorial",
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Probabilistic Approaches for Node and Graph Classification",
+    "authors": [
+      "Jaemin Yoo"
+    ],
+    "venue": "Ph.D. Thesis, Seoul National University",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": "https://snu-primo.hosted.exlibrisgroup.com/permalink/f/1l6eo7m/82SNU_INST51856295380002591",
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Accurate Stock Movement Prediction with Self-supervised Learning from Sparse Noisy Tweets",
+    "authors": [
+      "Yejun Soun*",
+      "Jaemin Yoo*",
+      "Minyong Cho",
+      "Jihyeong Jeon",
+      "U Kang"
+    ],
+    "venue": "BigData 2022",
+    "links": {
+      "paper": "resources/papers/SounYCJK22.pdf",
+      "code": null,
+      "bib": "https://dblp.org/rec/conf/bigdataconf/SounYCJK22.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Reciprocity in Directed Hypergraphs: Measures, Findings, and Generators",
+    "authors": [
+      "Sunwoo Kim",
+      "Minyoung Choe",
+      "Jaemin Yoo",
+      "Kijung Shin"
+    ],
+    "venue": "ICDM 2022",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2210.05328",
+      "code": "https://github.com/kswoo97/hyprec",
+      "bib": "https://dblp.org/rec/conf/icdm/KimCYS22.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Accurate Node Feature Estimation with Structured Variational Graph Autoencoder",
+    "authors": [
+      "Jaemin Yoo",
+      "Hyunsik Jeon",
+      "Jinhong Jung",
+      "U Kang"
+    ],
+    "venue": "KDD 2022",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2206.04516.pdf",
+      "code": "https://github.com/snudatalab/SVGA",
+      "bib": "https://dblp.uni-trier.de/rec/conf/kdd/YooJJK22.html?view=bibtex",
+      "slides": "resources/slides/YooJJK22.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Model-Agnostic Augmentation for Accurate Graph Classification",
+    "authors": [
+      "Jaemin Yoo",
+      "Sooyeon Shim",
+      "U Kang"
+    ],
+    "venue": "WWW 2022",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2202.10107.pdf",
+      "code": "https://github.com/snudatalab/GraphAug",
+      "bib": "https://dblp.uni-trier.de/rec/conf/www/YooSK22.html?view=bibtex",
+      "slides": "resources/slides/YooSK22.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "MiDaS: Representative Sampling from Real-world Hypergraphs",
+    "authors": [
+      "Minyoung Choe",
+      "Jaemin Yoo",
+      "Geon Lee",
+      "Woonsung Baek",
+      "U Kang",
+      "Kijung Shin"
+    ],
+    "venue": "WWW 2022",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2202.01587.pdf",
+      "code": "https://github.com/young917/MiDaS",
+      "bib": "https://dblp.uni-trier.de/rec/conf/www/ChoeYLBKS22.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Transition Matrix Representation of Trees with Transposed Convolutions",
+    "authors": [
+      "Jaemin Yoo",
+      "Lee Sael"
+    ],
+    "venue": "SDM 2022",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2202.10677.pdf",
+      "code": "https://github.com/leesael/TART",
+      "bib": "https://dblp.uni-trier.de/rec/conf/sdm/YooS22.html?view=bibtex",
+      "slides": "resources/slides/YooS22.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Graph-based PU Learning for Binary and Multiclass Classification without Class Prior",
+    "authors": [
+      "Jaemin Yoo*",
+      "Junghun Kim*",
+      "Hoyoung Yoon*",
+      "Geonsoo Kim",
+      "Changwon Jang",
+      "U Kang"
+    ],
+    "venue": "Knowledge and Information Systems",
+    "links": {
+      "paper": "https://link.springer.com/content/pdf/10.1007/s10115-022-01702-8.pdf",
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/journals/kais/YooKYKJK22.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Signed Random Walk Diffusion for Effective Representation Learning in Signed Graphs",
+    "authors": [
+      "Jinhong Jung",
+      "Jaemin Yoo",
+      "U Kang"
+    ],
+    "venue": "PLOS ONE",
+    "links": {
+      "paper": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0265001",
+      "code": "https://github.com/snudatalab/SidNet",
+      "bib": "https://journals.plos.org/plosone/article/citation/bibtex?id=10.1371/journal.pone.0265001",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2021",
+    "title": "Accurate Graph-Based PU Learning without Class Prior",
+    "authors": [
+      "Jaemin Yoo*",
+      "Junghun Kim*",
+      "Hoyoung Yoon*",
+      "Geonsoo Kim",
+      "Changwon Jang",
+      "U Kang"
+    ],
+    "venue": "ICDM 2021",
+    "links": {
+      "paper": "resources/papers/YooKYKJK21.pdf",
+      "code": null,
+      "bib": "https://dblp.org/rec/conf/icdm/YooKYKJK21.html?view=bibtex",
+      "slides": "resources/slides/YooKYKJK21.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2021",
+    "title": "Accurate Multivariate Stock Movement Prediction via Data-Axis Transformer with Multi-Level Contexts",
+    "authors": [
+      "Jaemin Yoo",
+      "Yejun Soun",
+      "Yong-chan Park",
+      "U Kang"
+    ],
+    "venue": "KDD 2021",
+    "links": {
+      "paper": "resources/papers/YooSPK21.pdf",
+      "code": "http://datalab.snu.ac.kr/dtml",
+      "bib": "https://dblp.org/rec/conf/kdd/YooSPK21.html?view=bibtex",
+      "slides": "resources/slides/YooSPK21.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2021",
+    "title": "Gaussian Soft Decision Trees for Interpretable Feature-Based Classification",
+    "authors": [
+      "Jaemin Yoo",
+      "Lee Sael"
+    ],
+    "venue": "PAKDD 2021",
+    "links": {
+      "paper": "resources/papers/YooS21.pdf",
+      "code": "https://github.com/leesael/GSDT",
+      "bib": "https://dblp.org/rec/conf/pakdd/YooS21.html?view=bibtex",
+      "slides": "resources/slides/YooS21.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2021",
+    "title": "Attention-Based Autoregression for Accurate and Efficient Multivariate Time Series Forecasting",
+    "authors": [
+      "Jaemin Yoo",
+      "U Kang"
+    ],
+    "venue": "SDM 2021",
+    "links": {
+      "paper": "resources/papers/YooK21.pdf",
+      "code": null,
+      "bib": "https://dblp.org/rec/conf/sdm/YooK21.html?view=bibtex",
+      "slides": "resources/slides/YooK21.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2020",
+    "title": "Sampling Subgraphs with Guaranteed Treewidth for Accurate and Efficient Graphical Inference",
+    "authors": [
+      "Jaemin Yoo",
+      "U Kang",
+      "Mauro Scanagatta",
+      "Giorgio Corani",
+      "Marco Zaffalon"
+    ],
+    "venue": "WSDM 2020",
+    "links": {
+      "paper": "resources/papers/YooKSCZ20.pdf",
+      "code": "http://datalab.snu.ac.kr/btw",
+      "bib": "https://dblp.org/rec/conf/wsdm/YooKSCZ20.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": "resources/posters/YooKSCZ20.pdf"
+    }
+  },
+  {
+    "year": "2019",
+    "title": "Knowledge Extraction with No Observable Data",
+    "authors": [
+      "Jaemin Yoo",
+      "Minyong Cho",
+      "Taebum Kim",
+      "U Kang"
+    ],
+    "venue": "NeurIPS 2019",
+    "links": {
+      "paper": "https://papers.nips.cc/paper/2019/file/596f713f9a7376fe90a62abaaedecc2d-Paper.pdf",
+      "code": "https://github.com/snudatalab/KegNet",
+      "bib": "https://dblp.org/rec/conf/nips/YooCKK19.html?view=bibtex",
+      "slides": "resources/slides/YooCKK19.pdf",
+      "video": null,
+      "web": null,
+      "poster": "resources/posters/YooCKK19.pdf"
+    }
+  },
+  {
+    "year": "2019",
+    "title": "EDiT: Interpreting Ensemble Models via Compact Soft Decision Trees",
+    "authors": [
+      "Jaemin Yoo",
+      "Lee Sael"
+    ],
+    "venue": "ICDM 2019",
+    "links": {
+      "paper": "resources/papers/YooS19.pdf",
+      "code": "https://github.com/leesael/EDiT",
+      "bib": "https://dblp.org/rec/conf/icdm/YooS19.html?view=bibtex",
+      "slides": "resources/slides/YooS19.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2019",
+    "title": "Belief Propagation Network for Hard Inductive Semi-Supervised Learning",
+    "authors": [
+      "Jaemin Yoo",
+      "Hyunsik Jeon",
+      "U Kang"
+    ],
+    "venue": "IJCAI 2019",
+    "links": {
+      "paper": "https://www.ijcai.org/proceedings/2019/0580.pdf",
+      "code": "https://github.com/snudatalab/BPN",
+      "bib": "https://dblp.uni-trier.de/rec/conf/ijcai/YooJK19.html?view=bibtex",
+      "slides": "resources/slides/YooJK19.pdf",
+      "video": null,
+      "web": null,
+      "poster": "resources/posters/YooJK19.pdf"
+    }
+  },
+  {
+    "year": "2017 - 2018",
+    "title": "Fast and Scalable Distributed Loopy Belief Propagation on Real-World Graphs",
+    "authors": [
+      "Saehan Jo",
+      "Jaemin Yoo",
+      "U Kang"
+    ],
+    "venue": "WSDM 2018",
+    "links": {
+      "paper": "resources/papers/JoYK18.pdf",
+      "code": "http://datalab.snu.ac.kr/dlbp",
+      "bib": "https://dblp.org/rec/conf/wsdm/JoYK18.html?view=bibtex",
+      "slides": "resources/slides/JoYK18.pdf",
+      "video": null,
+      "web": null,
+      "poster": "resources/posters/JoYK18.pdf"
+    }
+  },
+  {
+    "year": "2017 - 2018",
+    "title": "Supervised Belief Propagation: Scalable Supervised Inference on Attributed Networks",
+    "authors": [
+      "Jaemin Yoo",
+      "Saehan Jo",
+      "U Kang"
+    ],
+    "venue": "ICDM 2017",
+    "links": {
+      "paper": "resources/papers/YooJK17.pdf",
+      "code": "http://datalab.snu.ac.kr/sbp",
+      "bib": "https://dblp.uni-trier.de/rec/conf/icdm/YooJK17.html?view=bibtex",
+      "slides": "resources/slides/YooJK17.pdf",
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2017 - 2018",
+    "title": "Efficient Learning of Bounded-Treewidth Bayesian Networks from Complete and Incomplete Data Sets",
+    "authors": [
+      "Mauro Scanagatta",
+      "Giorgio Corani",
+      "Marco Zaffalon",
+      "Jaemin Yoo",
+      "U Kang"
+    ],
+    "venue": "International Journal of Approximate Reasoning",
+    "links": {
+      "paper": "https://dl.acm.org/citation.cfm?id=3199356",
+      "code": null,
+      "bib": "https://dblp.org/rec/journals/ijar/ScanagattaCZYK18.html?view=bibtex",
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  }
+]

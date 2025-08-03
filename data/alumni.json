@@ -1,0 +1,10 @@
+{
+  "graduate_students": [
+    { "name": "Alice Kim", "association": "KAIST EE" },
+    { "name": "Bob Park", "association": "KAIST CS" }
+  ],
+  "undergraduate_interns": [
+    { "name": "Chris Lee", "association": "KAIST EE" },
+    { "name": "Dana Choi", "association": "KAIST CS" }
+  ]
+}

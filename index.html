@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAIST DAI Lab</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Tailwind configuration if needed */
+      @layer utilities {
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+    
+    <script src="include-header-footer.js"></script>
+
+    <!-- Hero Section -->
+    <section class="relative flex hero-bg">
+      <div class="w-full">
+      <div id="site-header"></div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 flex w-full pt-16 pb-28 px-6 items-center">
+        <img
+          src="images/lab_logo.png"
+          alt="Lab Logo"
+          class="mx-auto w-64 object-contain lg:col-start-2"
+        />
+        <img
+          src="images/kaist_logo.png"
+          alt="KAIST Logo"
+          class="mx-auto w-40 object-contain lg:col-start-3"
+        />
+      </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-16">
+      <h2 class="text-4xl font-bold mb-8">About Us</h2>
+      <div class="mx-auto space-y-4">
+        <p>
+          We are committed to uncovering data-centric solutions to complex,
+          real-world challenges by harnessing the power of artificial
+          intelligence. Our research areas span a multitude of problem levels,
+          ranging from application-based solutions such as social network
+          analysis, recommender systems, and anomaly detection, to theoretical
+          constructs within machine learning and probabilistic inference.
+        </p>
+        <p class="text-red-600 text-sm">
+          Our research group is actively searching for talented and enthusiastic
+          students. Please check
+          <a
+            href="https://docs.google.com/document/d/1y0FJLwg7TPy5n7g44G3oxlpssQvSmum8hC6K7vLTfCE/edit?tab=t.0#heading=h.c2h5it991cqf"
+            class="underline text-blue-400 hover:text-blue-600"
+            target="_blank"
+            >this document</a
+          >
+          for more information.
+        </p>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="container border-t-2 border-gray-300 mx-auto"></div>
+
+    <!-- Research Section -->
+    <section id="research" class="pt-16 pb-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-light text-gray-400">Research</h2>
+        <h2 class="text-4xl font-bold mb-8">Overview</h2>
+        <div id="research-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+      </div>
+    </section>
+
+    <div id="site-footer"></div>
+
+    <script>
+      // Fetch and render research topics
+      fetch("research.json")
+        .then((response) => response.json())
+        .then((research) => {
+          const container = document.getElementById("research-list");
+          // Clear container in case of re-render
+          container.innerHTML = "";
+          research.forEach(({ title, contents, keywords, image }) => {
+            const card = document.createElement("div");
+            card.className = "p-6 bg-white rounded-lg shadow-md flex flex-col gap-4 items-center";
+            card.innerHTML = `
+              <img src="${image}" alt="${title}" class="w-48 h-48 object-cover rounded mt-2 border border-gray-200 bg-gray-100 flex-shrink-0" onerror="this.style.display='none'">
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">${title}</h3>
+                <p class="text-sm">${contents}</p>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  ${keywords
+                    .map(
+                      (kw) => `<span class='bg-blue-100 text-blue-700 text-xs font-medium px-2 py-1 rounded'>${kw}</span>`
+                    )
+                    .join("")}
+                </div>
+              </div>
+            `;
+            container.appendChild(card);
+          });
+        });
+    </script>
+  </body>
+</html>

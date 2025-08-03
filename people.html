@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People — DAI Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <script src="include-header-footer.js"></script>
+
+    <!-- Hero Section -->
+    <section class="relative flex hero-bg">
+      <div class="w-full">
+        <div id="site-header"></div>
+        <div class="container mx-auto px-6 py-12 text-white text-4xl font-bold">
+          Members
+        </div>
+      </div>
+    </section>
+
+    <main class="container mx-auto px-6">
+      <section class="py-16">
+        <h2 class="text-4xl font-light text-gray-400">Director</h2>
+        <h2 class="text-4xl font-bold mb-6">Jaemin Yoo</h2>
+        <div
+          class="bg-white shadow-md rounded-lg p-6 mx-auto flex flex-col md:flex-row items-center md:items-start gap-6"
+        >
+          <img
+            src="images/jaemin.jpg"
+            alt="Jaemin Yoo"
+            class="w-64 h-64 object-cover"
+          />
+          <div class="text-center md:text-left">
+            <p class="text-gray-600">
+              Assistant Professor, School of Electrical Engineering, KAIST
+            </p>
+            <p class="text-gray-600">
+              Adjunct Professor, Kim Jaechul Graduate School of AI, KAIST
+            </p>
+            <div class="mt-4 text-sm space-y-1">
+              <p><strong>Background:</strong></p>
+              <p>B.S. in CSE at Seoul National University (2016)</p>
+              <p>Ph.D. in CSE at Seoul National University (2022)</p>
+              <p>Postdoc at Carnegie Mellon University (2022 - 2023)</p>
+              <p>
+                <strong>Email:</strong>
+                <a
+                  href="mailto:jaemin@kaist.ac.kr"
+                  class="text-blue-600 underline"
+                  >jaemin@kaist.ac.kr</a
+                >
+              </p>
+              <p>
+                <strong>Web:</strong>
+                <a
+                  href="https://jaeminyoo.github.io/"
+                  target="_blank"
+                  class="text-blue-600 underline"
+                  >https://jaeminyoo.github.io/</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <h2 class="text-4xl font-light text-gray-400">Graduate</h2>
+        <h2 class="text-4xl font-bold mb-6">Students</h2>
+        <div
+          id="graduate_students"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+        >
+          <!-- Student cards will be injected here -->
+        </div>
+      </section>
+
+      <section class="py-16">
+        <h2 class="text-4xl font-light text-gray-400">Undergraduate</h2>
+        <h2 class="text-4xl font-bold mb-6">Interns</h2>
+        <div
+          id="undergraduate_interns"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+        >
+          <!-- Student cards will be injected here -->
+        </div>
+      </section>
+
+      <section class="py-16">
+        <h2 class="text-4xl font-light text-gray-400">Alumni</h2>
+        <div class="mb-4">
+          <button
+            id="toggle-graduate-alumni"
+            class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+          >
+            Graduate Alumni
+          </button>
+          <div
+            id="graduate-alumni-list"
+            class="mt-4 hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+          ></div>
+        </div>
+        <div>
+          <button
+            id="toggle-undergraduate-alumni"
+            class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
+          >
+            Undergraduate Alumni
+          </button>
+          <div
+            id="undergraduate-alumni-list"
+            class="mt-4 hidden grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script>
+      fetch("data/graduate_students.json")
+        .then((response) => response.json())
+        .then((graduate_students) => {
+          const container = document.getElementById("graduate_students");
+          graduate_students.forEach(
+            ({ name, role, image, research, email, homepage }) => {
+              const card = document.createElement("div");
+              card.className = "bg-white shadow-md rounded-lg p-6 text-center";
+              card.innerHTML = `
+              <img src="${image}" alt="${name}" class="w-36 h-36 mb-2 mx-auto object-cover"> 
+              <h3 class="text-lg font-semibold">${name} ${
+                homepage
+                  ? `<a href="${homepage}" class="" target="_blank">🔗</a>`
+                  : ""
+              }</h3>  
+              <p class="text-sm text-gray-600">${role}</p>
+              <p class="mt-2 text-xs">${research}</p>
+              <a
+                  href="mailto:${email}"
+                  class="underline mt-1 text-xs"
+                  >${email}</a
+                >
+            `;
+              container.appendChild(card);
+            }
+          );
+        });
+      fetch("data/undergraduate_interns.json")
+        .then((response) => response.json())
+        .then((undergraduate_interns) => {
+          const container = document.getElementById("undergraduate_interns");
+          undergraduate_interns.forEach(({ name, association }) => {
+            const card = document.createElement("div");
+            card.className = "bg-white shadow-md rounded-lg p-6 text-center";
+            card.innerHTML = `
+              <h3 class="text-lg font-semibold mb-2">${name}</h3>
+              <p class="text-sm text-gray-600">${association}</p>
+            `;
+            container.appendChild(card);
+          });
+        });
+      fetch("data/alumni.json")
+        .then((response) => response.json())
+        .then((alumni) => {
+          // Graduate alumni
+          const gradBtn = document.getElementById("toggle-graduate-alumni");
+          const gradList = document.getElementById("graduate-alumni-list");
+          gradBtn.addEventListener("click", () => {
+            gradList.classList.toggle("hidden");
+          });
+          gradList.className = "mt-4 hidden";
+          alumni.graduate_students.forEach(({ name, association }) => {
+            const row = document.createElement("div");
+            row.className = "border-b py-2";
+            const nameBtn = document.createElement("button");
+            nameBtn.className = "text-lg font-semibold text-left w-full";
+            nameBtn.textContent = name;
+            const assocDiv = document.createElement("div");
+            assocDiv.className = "text-sm text-gray-600 pl-4 hidden";
+            assocDiv.textContent = association;
+            nameBtn.addEventListener("click", () => {
+              assocDiv.classList.toggle("hidden");
+            });
+            row.appendChild(nameBtn);
+            row.appendChild(assocDiv);
+            gradList.appendChild(row);
+          });
+
+          // Undergraduate alumni
+          const undergradBtn = document.getElementById(
+            "toggle-undergraduate-alumni"
+          );
+          const undergradList = document.getElementById(
+            "undergraduate-alumni-list"
+          );
+          undergradBtn.addEventListener("click", () => {
+            undergradList.classList.toggle("hidden");
+          });
+          undergradList.className = "mt-4 hidden";
+          alumni.undergraduate_interns.forEach(({ name, association }) => {
+            const row = document.createElement("div");
+            row.className = "border-b py-2";
+            const nameBtn = document.createElement("button");
+            nameBtn.className = "text-lg font-semibold text-left w-full";
+            nameBtn.textContent = name;
+            const assocDiv = document.createElement("div");
+            assocDiv.className = "text-sm text-gray-600 pl-4 hidden";
+            assocDiv.textContent = association;
+            nameBtn.addEventListener("click", () => {
+              assocDiv.classList.toggle("hidden");
+            });
+            row.appendChild(nameBtn);
+            row.appendChild(assocDiv);
+            undergradList.appendChild(row);
+          });
+        });
+    </script>
+  </body>
+</html>
