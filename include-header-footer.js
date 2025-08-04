@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll("#main-nav a").forEach((link) => {
         if (link.getAttribute("href") === current) {
           link.classList.add("font-bold");
-          link.classList.remove("hover:text-neutral-300")
+          link.classList.remove("hover:text-neutral-300");
         } else {
           link.classList.remove("font-bold");
-          link.classList.add("hover:text-neutral-300")
+          link.classList.add("hover:text-neutral-300");
         }
       });
       document.querySelectorAll("#nav-menu a").forEach((link) => {

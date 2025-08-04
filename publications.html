@@ -6,7 +6,10 @@
 
     <title>Publications - Data AI Lab @ KAIST</title>
     <meta property="og:title" content="Publications - Data AI Lab, KAIST" />
-    <meta property="og:description" content="Explore the latest research publications from the Data AI Lab at KAIST." />
+    <meta
+      property="og:description"
+      content="Explore the latest research publications from the Data AI Lab at KAIST."
+    />
     <meta property="og:image" content="images/preview.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -22,7 +25,9 @@
     <section class="relative flex hero-bg">
       <div class="w-full">
         <div id="site-header"></div>
-        <div class="container mx-auto px-6 py-6 sm:py-12 text-white text-3xl sm:text-4xl font-bold">
+        <div
+          class="container mx-auto px-6 py-6 sm:py-12 text-white text-3xl sm:text-4xl font-bold"
+        >
           Publications
         </div>
       </div>
@@ -45,13 +50,15 @@
             if (pub.year !== currentYear) {
               const yearHeader = document.createElement("h3");
               yearHeader.textContent = pub.year;
-              yearHeader.className = "text-xl sm:text-2xl font-semibold mt-2 sm:mt-4 pt-4 sm:pt-8";
+              yearHeader.className =
+                "text-xl sm:text-2xl font-semibold mt-2 sm:mt-4 pt-4 sm:pt-8";
               container.appendChild(yearHeader);
               currentYear = pub.year;
             }
 
             const item = document.createElement("div");
-            item.className = "bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-lg shadow";
+            item.className =
+              "bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-lg shadow";
 
             const title = document.createElement("div");
             title.className = "font-semibold text-sm sm:text-lg sm:mb-1";
@@ -59,7 +66,7 @@
 
             const authors = document.createElement("div");
             authors.className = "text-sm sm:text-base text-gray-700 sm:mb-1";
-            
+
             // Create authors list with lab member highlighting
             const authorElements = pub.authors.map((author, index) => {
               const isLabMember = pub.is_lab_member && pub.is_lab_member[index];
@@ -69,7 +76,7 @@
                 return author;
               }
             });
-            
+
             authors.innerHTML = authorElements.join(", ");
 
             const venue = document.createElement("div");
@@ -79,7 +86,7 @@
 
             const links = document.createElement("span");
             links.className = "text-xs sm:text-sm inline-block";
-            
+
             // Create array of link elements
             const linkElements = [];
             for (const [label, href] of Object.entries(pub.links)) {
@@ -92,7 +99,7 @@
                 linkElements.push(a);
               }
             }
-            
+
             // Wrap links in brackets with commas
             if (linkElements.length > 0) {
               links.appendChild(document.createTextNode("["));
