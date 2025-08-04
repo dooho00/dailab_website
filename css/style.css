@@ -28,3 +28,19 @@
     background-position: 0% 50%;
   }
 }
+
+/* Tab styles */
+.tab-button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  color: #374751;
+  border-color: #d1d5db;
+}
+
+.tab-button.active {
+  color: #01438f;
+  border-color: #01438f;
+}

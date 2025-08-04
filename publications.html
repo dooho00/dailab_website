@@ -28,100 +28,187 @@
         <div
           class="container mx-auto px-6 py-6 sm:py-12 text-white text-3xl sm:text-4xl font-bold"
         >
-          Publications
+          <span id="page-title">Publications</span>
         </div>
       </div>
     </section>
 
-    <main class="container mx-auto px-6 pb-16">
-      <div id="pub-list" class="space-y-3"></div>
+    <main class="container mx-auto px-6 py-4 sm:py-8">
+      <!-- Navigation Tabs -->
+      <div class="mb-3 sm:mb-6 border-b border-gray-200">
+        <nav class="flex space-x-8" aria-label="Tabs">
+          <button
+            id="papers-tab"
+            class="tab-button active py-2 px-1 border-b-2 text-md sm:text-lg font-semibold"
+          >
+            Papers
+          </button>
+          <button
+            id="tutorials-tab"
+            class="tab-button py-2 px-1 border-b-2 border-transparent text-md sm:text-lgfont-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+          >
+            Tutorials
+          </button>
+        </nav>
+      </div>
+
+      <div id="content-list" class="space-y-3 pb-16"></div>
     </main>
 
     <div id="site-footer"></div>
 
     <script>
-      fetch("data/publications.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const container = document.getElementById("pub-list");
-          let currentYear = null;
+      let currentView = "papers";
+      let papersData = null;
+      let tutorialsData = null;
 
-          data.forEach((pub) => {
-            if (pub.year !== currentYear) {
-              const yearHeader = document.createElement("h3");
-              yearHeader.textContent = pub.year;
-              yearHeader.className =
-                "text-xl sm:text-2xl font-semibold mt-2 sm:mt-4 pt-4 sm:pt-8";
-              container.appendChild(yearHeader);
-              currentYear = pub.year;
+      // Load both datasets
+      Promise.all([
+        fetch("data/publications.json").then((res) => res.json()),
+        fetch("data/tutorials.json").then((res) => res.json()),
+      ])
+        .then(([papers, tutorials]) => {
+          papersData = papers;
+          tutorialsData = tutorials;
+          renderContent(currentView);
+        })
+        .catch((error) => {
+          console.error("Error loading data:", error);
+        });
+
+      // Tab switching functionality
+      document.getElementById("papers-tab").addEventListener("click", () => {
+        switchTab("papers");
+      });
+
+      document.getElementById("tutorials-tab").addEventListener("click", () => {
+        switchTab("tutorials");
+      });
+
+      function switchTab(view) {
+        currentView = view;
+
+        // Update tab styles
+        document.querySelectorAll(".tab-button").forEach((tab) => {
+          tab.classList.remove("active", "font-semibold");
+          tab.classList.add(
+            "border-transparent",
+            "text-gray-500",
+            "font-medium"
+          );
+        });
+
+        const activeTab = document.getElementById(`${view}-tab`);
+        activeTab.classList.add("active", "font-semibold");
+        activeTab.classList.remove(
+          "border-transparent",
+          "text-gray-500",
+          "font-medium"
+        );
+
+        // Update page title
+        // const pageTitle = document.getElementById("page-title");
+        // pageTitle.textContent =
+        //  view === "papers" ? "Publications" : "Tutorials";
+
+        // Update document title
+        //document.title = `${
+        //  view === "papers" ? "Publications" : "Tutorials"
+        //} - Data AI Lab @ KAIST`;
+
+        // Render content
+        renderContent(view);
+      }
+
+      function renderContent(view) {
+        const data = view === "papers" ? papersData : tutorialsData;
+        if (!data) return;
+
+        const container = document.getElementById("content-list");
+        container.innerHTML = ""; // Clear existing content
+        let currentYear = null;
+
+        data.forEach((item) => {
+          if (item.year !== currentYear) {
+            const yearHeader = document.createElement("h3");
+            yearHeader.textContent = item.year;
+            yearHeader.className =
+              "text-xl sm:text-2xl font-semibold mt-2 sm:mt-4 pt-4 sm:pt-8";
+            container.appendChild(yearHeader);
+            currentYear = item.year;
+          }
+
+          const itemElement = document.createElement("div");
+          itemElement.className =
+            "bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-lg shadow";
+
+          const title = document.createElement("div");
+          title.className = "font-semibold text-sm sm:text-lg sm:mb-1";
+          title.textContent = item.title;
+
+          const authors = document.createElement("div");
+          authors.className = "text-sm sm:text-base text-gray-700 sm:mb-1";
+
+          // Create authors list with lab member highlighting
+          const authorElements = item.authors.map((author, index) => {
+            const isLabMember = item.is_lab_member && item.is_lab_member[index];
+            if (isLabMember) {
+              return `<span class="underline font-semibold">${author}</span>`;
+            } else {
+              return author;
             }
+          });
 
-            const item = document.createElement("div");
-            item.className =
-              "bg-white px-3 sm:px-4 py-2 sm:py-3 rounded-lg shadow";
+          authors.innerHTML = authorElements.join(", ");
 
-            const title = document.createElement("div");
-            title.className = "font-semibold text-sm sm:text-lg sm:mb-1";
-            title.textContent = pub.title;
+          const venue = document.createElement("div");
+          venue.className =
+            "text-xs sm:text-sm italic text-gray-500 inline-block font-semibold mr-2";
+          venue.textContent = item.venue;
 
-            const authors = document.createElement("div");
-            authors.className = "text-sm sm:text-base text-gray-700 sm:mb-1";
+          const links = document.createElement("span");
+          links.className = "text-xs sm:text-sm inline-block";
 
-            // Create authors list with lab member highlighting
-            const authorElements = pub.authors.map((author, index) => {
-              const isLabMember = pub.is_lab_member && pub.is_lab_member[index];
-              if (isLabMember) {
-                return `<span class="underline font-semibold">${author}</span>`;
-              } else {
-                return author;
+          // Create array of link elements
+          const linkElements = [];
+          const allowedLinks =
+            view === "papers"
+              ? ["paper", "code", "web"]
+              : ["paper", "code", "web", "video", "slides"];
+
+          for (const [label, href] of Object.entries(item.links)) {
+            if (href && allowedLinks.includes(label)) {
+              const a = document.createElement("a");
+              a.href = href;
+              a.className = "text-blue-600 hover:underline";
+              a.target = "_blank";
+              a.textContent = label;
+              linkElements.push(a);
+            }
+          }
+
+          // Wrap links in brackets with commas
+          if (linkElements.length > 0) {
+            links.appendChild(document.createTextNode("["));
+            linkElements.forEach((link, index) => {
+              links.appendChild(link);
+              if (index < linkElements.length - 1) {
+                links.appendChild(document.createTextNode(", "));
               }
             });
+            links.appendChild(document.createTextNode("]"));
+          }
 
-            authors.innerHTML = authorElements.join(", ");
+          const venueLinksWrapper = document.createElement("div");
+          venueLinksWrapper.appendChild(venue);
+          venueLinksWrapper.appendChild(links);
 
-            const venue = document.createElement("div");
-            venue.className =
-              "text-xs sm:text-sm italic text-gray-500 inline-block font-semibold mr-2";
-            venue.textContent = pub.venue;
-
-            const links = document.createElement("span");
-            links.className = "text-xs sm:text-sm inline-block";
-
-            // Create array of link elements
-            const linkElements = [];
-            for (const [label, href] of Object.entries(pub.links)) {
-              if (href && ["paper", "code", "web"].includes(label)) {
-                const a = document.createElement("a");
-                a.href = href;
-                a.className = "text-blue-600 hover:underline";
-                a.target = "_blank";
-                a.textContent = label;
-                linkElements.push(a);
-              }
-            }
-
-            // Wrap links in brackets with commas
-            if (linkElements.length > 0) {
-              links.appendChild(document.createTextNode("["));
-              linkElements.forEach((link, index) => {
-                links.appendChild(link);
-                if (index < linkElements.length - 1) {
-                  links.appendChild(document.createTextNode(", "));
-                }
-              });
-              links.appendChild(document.createTextNode("]"));
-            }
-
-            const venueLinksWrapper = document.createElement("div");
-            venueLinksWrapper.appendChild(venue);
-            venueLinksWrapper.appendChild(links);
-
-            item.appendChild(title);
-            item.appendChild(authors);
-            item.appendChild(venueLinksWrapper);
-            container.appendChild(item);
-          });
+          itemElement.appendChild(title);
+          itemElement.appendChild(authors);
+          itemElement.appendChild(venueLinksWrapper);
+          container.appendChild(itemElement);
         });
+      }
     </script>
   </body>
 </html>
