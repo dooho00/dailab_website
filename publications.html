@@ -90,7 +90,7 @@
             // Create array of link elements
             const linkElements = [];
             for (const [label, href] of Object.entries(pub.links)) {
-              if (href) {
+              if (href && ["paper", "code", "web"].includes(label)) {
                 const a = document.createElement("a");
                 a.href = href;
                 a.className = "text-blue-600 hover:underline";
