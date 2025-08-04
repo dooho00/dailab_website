@@ -1,0 +1,34 @@
+[
+  {
+    "year": "2023",
+    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
+    "authors": ["Geon Lee", "Jaemin Yoo", "Kijung Shin"],
+    "is_lab_member": [false, true, false],
+    "venue": "KDD 2023 and WWW 2023",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/conf/www/FiondaHAACCC0DE23.html?view=bibtex",
+      "slides": null,
+      "video": "https://www.youtube.com/watch?v=0mD7zOBx10M",
+      "web": "https://sites.google.com/view/hypergraph-tutorial",
+      "poster": null
+    }
+  },
+  {
+    "year": "2022",
+    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
+    "authors": ["Geon Lee", "Jaemin Yoo", "Kijung Shin"],
+    "is_lab_member": [false, true, false],
+    "venue": "ICDM 2022 and CIKM 2022",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": "https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex",
+      "slides": null,
+      "video": "https://youtu.be/0mD7zOBx10M",
+      "web": "https://sites.google.com/view/hypergraph-tutorial",
+      "poster": null
+    }
+  }
+]

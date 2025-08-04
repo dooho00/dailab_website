@@ -192,22 +192,6 @@
   },
   {
     "year": "2023",
-    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
-    "authors": ["Geon Lee", "Jaemin Yoo", "Kijung Shin"],
-    "is_lab_member": [false, true, false],
-    "venue": "KDD 2023",
-    "links": {
-      "paper": null,
-      "code": null,
-      "bib": "https://dblp.uni-trier.de/rec/conf/www/FiondaHAACCC0DE23.html?view=bibtex",
-      "slides": null,
-      "video": "https://www.youtube.com/watch?v=0mD7zOBx10M",
-      "web": "https://sites.google.com/view/hypergraph-tutorial",
-      "poster": null
-    }
-  },
-  {
-    "year": "2023",
     "title": "Self-Supervision for Tackling Unsupervised Anomaly Detection: Pitfalls and Opportunities",
     "authors": ["Leman Akoglu", "Jaemin Yoo"],
     "is_lab_member": [false, true],
@@ -342,38 +326,6 @@
       "slides": null,
       "video": null,
       "web": null,
-      "poster": null
-    }
-  },
-  {
-    "year": "2022",
-    "title": "Mining of Real-world Hypergraphs: Concepts, Patterns, and Generators",
-    "authors": ["Geon Lee", "Jaemin Yoo", "Kijung Shin"],
-    "is_lab_member": [false, true, false],
-    "venue": "ICDM 2022",
-    "links": {
-      "paper": null,
-      "code": null,
-      "bib": "https://dblp.uni-trier.de/rec/conf/cikm/LeeYS22.html?view=bibtex",
-      "slides": null,
-      "video": "https://youtu.be/0mD7zOBx10M",
-      "web": "https://sites.google.com/view/hypergraph-tutorial",
-      "poster": null
-    }
-  },
-  {
-    "year": "2022",
-    "title": "Probabilistic Approaches for Node and Graph Classification",
-    "authors": ["Jaemin Yoo"],
-    "is_lab_member": [true],
-    "venue": "Ph.D. Thesis, Seoul National University",
-    "links": {
-      "paper": null,
-      "code": null,
-      "bib": null,
-      "slides": null,
-      "video": null,
-      "web": "https://snu-primo.hosted.exlibrisgroup.com/permalink/f/1l6eo7m/82SNU_INST51856295380002591",
       "poster": null
     }
   },
@@ -667,7 +619,7 @@
     }
   },
   {
-    "year": "2017 - 2018",
+    "year": "2018",
     "title": "Fast and Scalable Distributed Loopy Belief Propagation on Real-World Graphs",
     "authors": ["Saehan Jo", "Jaemin Yoo", "U Kang"],
     "is_lab_member": [false, true, false],
@@ -683,23 +635,7 @@
     }
   },
   {
-    "year": "2017 - 2018",
-    "title": "Supervised Belief Propagation: Scalable Supervised Inference on Attributed Networks",
-    "authors": ["Jaemin Yoo", "Saehan Jo", "U Kang"],
-    "is_lab_member": [true, false, false],
-    "venue": "ICDM 2017",
-    "links": {
-      "paper": "resources/papers/YooJK17.pdf",
-      "code": "http://datalab.snu.ac.kr/sbp",
-      "bib": "https://dblp.uni-trier.de/rec/conf/icdm/YooJK17.html?view=bibtex",
-      "slides": "resources/slides/YooJK17.pdf",
-      "video": null,
-      "web": null,
-      "poster": null
-    }
-  },
-  {
-    "year": "2017 - 2018",
+    "year": "2018",
     "title": "Efficient Learning of Bounded-Treewidth Bayesian Networks from Complete and Incomplete Data Sets",
     "authors": [
       "Mauro Scanagatta",
@@ -715,6 +651,22 @@
       "code": null,
       "bib": "https://dblp.org/rec/journals/ijar/ScanagattaCZYK18.html?view=bibtex",
       "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2017",
+    "title": "Supervised Belief Propagation: Scalable Supervised Inference on Attributed Networks",
+    "authors": ["Jaemin Yoo", "Saehan Jo", "U Kang"],
+    "is_lab_member": [true, false, false],
+    "venue": "ICDM 2017",
+    "links": {
+      "paper": "resources/papers/YooJK17.pdf",
+      "code": "http://datalab.snu.ac.kr/sbp",
+      "bib": "https://dblp.uni-trier.de/rec/conf/icdm/YooJK17.html?view=bibtex",
+      "slides": "resources/slides/YooJK17.pdf",
       "video": null,
       "web": null,
       "poster": null
