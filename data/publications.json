@@ -181,7 +181,7 @@
     "is_lab_member": [false, true, false, false, false, false],
     "venue": "Transactions on Knowledge Discovery from Data",
     "links": {
-      "paper": "http://dmlab.kaist.ac.kr/~kijungs/papers/midasTKDD2024.pdf",
+      "paper": "https://dmlab.kaist.ac.kr/~kijungs/papers/midasTKDD2024.pdf",
       "code": "https://github.com/jaeminyoo/SSL-AD",
       "bib": "https://dblp.org/rec/journals/tkdd/ChoeYLBKS24.html?view=bibtex",
       "slides": null,
@@ -508,7 +508,7 @@
     "venue": "KDD 2021",
     "links": {
       "paper": "resources/papers/YooSPK21.pdf",
-      "code": "http://datalab.snu.ac.kr/dtml",
+      "code": "https://datalab.snu.ac.kr/dtml",
       "bib": "https://dblp.org/rec/conf/kdd/YooSPK21.html?view=bibtex",
       "slides": "resources/slides/YooSPK21.pdf",
       "video": null,
@@ -562,7 +562,7 @@
     "venue": "WSDM 2020",
     "links": {
       "paper": "resources/papers/YooKSCZ20.pdf",
-      "code": "http://datalab.snu.ac.kr/btw",
+      "code": "https://datalab.snu.ac.kr/btw",
       "bib": "https://dblp.org/rec/conf/wsdm/YooKSCZ20.html?view=bibtex",
       "slides": null,
       "video": null,
@@ -626,7 +626,7 @@
     "venue": "WSDM 2018",
     "links": {
       "paper": "resources/papers/JoYK18.pdf",
-      "code": "http://datalab.snu.ac.kr/dlbp",
+      "code": "https://datalab.snu.ac.kr/dlbp",
       "bib": "https://dblp.org/rec/conf/wsdm/JoYK18.html?view=bibtex",
       "slides": "resources/slides/JoYK18.pdf",
       "video": null,
@@ -664,7 +664,7 @@
     "venue": "ICDM 2017",
     "links": {
       "paper": "resources/papers/YooJK17.pdf",
-      "code": "http://datalab.snu.ac.kr/sbp",
+      "code": "https://datalab.snu.ac.kr/sbp",
       "bib": "https://dblp.uni-trier.de/rec/conf/icdm/YooJK17.html?view=bibtex",
       "slides": "resources/slides/YooJK17.pdf",
       "video": null,

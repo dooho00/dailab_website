@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .hero-bg {
   background: linear-gradient(-45deg, #adad9e, #1e4668, #0a1620);
   background-size: 400% 400%;
