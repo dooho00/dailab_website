@@ -8,6 +8,14 @@
     "homepage": "https://sites.google.com/view/doyunchoi"
   },
   {
+    "name": "Jinmo Lee",
+    "role": "Ph.D. Student",
+    "image": "images/jinmo.jpg",
+    "research": "Heterogeneous graph neural networks",
+    "email": "jml2529@kaist.ac.kr",
+    "homepage": "https://morcellinus.github.io/"
+  },
+  {
     "name": "Cheonwoo Lee",
     "role": "Master's Student",
     "image": "images/cheonwoo.jpg",

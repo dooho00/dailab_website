@@ -103,10 +103,21 @@
       </section>
 
       <section class="pb-16">
-        <h2 class="text-3xl sm:text-4xl font-light text-gray-400">Graduate</h2>
-        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold mb-6">
-          Students
+        <h2 class="text-3xl sm:text-4xl font-light text-gray-400">
+          Postdoctoral
         </h2>
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold">Researchers</h2>
+        <div
+          id="postdoctoral_researchers"
+          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8"
+        >
+          <!-- Researcher cards will be injected here -->
+        </div>
+      </section>
+
+      <section class="pb-16">
+        <h2 class="text-3xl sm:text-4xl font-light text-gray-400">Graduate</h2>
+        <h2 class="text-3xl sm:text-4xl mb-3 sm:mb-6 font-bold">Students</h2>
         <div
           id="graduate_students"
           class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-8"
@@ -190,6 +201,40 @@
     <div id="site-footer"></div>
 
     <script>
+      fetch("data/postdoctoral_researchers.json")
+        .then((response) => response.json())
+        .then((postdoctoral_researchers) => {
+          const container = document.getElementById("postdoctoral_researchers");
+          postdoctoral_researchers.forEach(
+            ({ name, role, image, research, email, homepage }) => {
+              const card = document.createElement("div");
+              card.className =
+                "bg-white shadow-md rounded-lg p-4 sm:p-6 text-center";
+              card.innerHTML = `
+              <img src="${image}" alt="${name}" class="sm:w-36 sm:h-36 mb-2 mx-auto object-cover"> 
+              <div class="flex items-center justify-center gap-1">
+                <h3 class="text-sm sm:text-lg font-semibold">${name}</h3>
+                ${
+                  homepage
+                    ? `<a href="${homepage}" class="text-neutral-500 hover:text-neutral-800 transition" target="_blank">
+                      <svg xmlns="https://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 48 48" fill="currentColor" class="w-4 h-4">
+                        <path d="M39.5,43h-9c-1.381,0-2.5-1.119-2.5-2.5v-9c0-1.105-0.895-2-2-2h-4c-1.105,0-2,0.895-2,2v9c0,1.381-1.119,2.5-2.5,2.5h-9	C7.119,43,6,41.881,6,40.5V21.413c0-2.299,1.054-4.471,2.859-5.893L23.071,4.321c0.545-0.428,1.313-0.428,1.857,0L39.142,15.52	C40.947,16.942,42,19.113,42,21.411V40.5C42,41.881,40.881,43,39.5,43z"></path>
+                      </svg></a>`
+                    : ""
+                }
+              </div>
+              <p class="text-xs sm:text-sm text-gray-600">${role}</p>
+              <p class="hidden sm:block mt-2 text-xs">${research}</p>
+              <a
+                  href="mailto:${email}"
+                  class="hidden sm:block underline mt-1 text-xs text-blue-500 hover:text-blue-800"
+                  >${email}</a
+                >
+            `;
+              container.appendChild(card);
+            }
+          );
+        });
       fetch("data/graduate_students.json")
         .then((response) => response.json())
         .then((graduate_students) => {
