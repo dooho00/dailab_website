@@ -1,6 +1,19 @@
 {
-  "graduate_students": [],
+  "graduate_students": [
+    {
+      "name": "Sagad Hamid",
+      "association": "University of Münster (Visiting PhD Student)"
+    }
+  ],
   "undergraduate_interns": [
+    {
+      "name": "Kyuho Lee",
+      "association": "KAIST EE (Winter 2024 - Spring 2025)"
+    },
+    {
+      "name": "Minsung Chae",
+      "association": "KAIST EE (Summer 2024 - Spring 2025)"
+    },
     { "name": "Sadik Adnan", "association": "KAIST Math (Spring 2025)" },
     { "name": "Sangun Chung", "association": "KAIST EE (Spring 2025)" },
     { "name": "Sungjoon Hwang", "association": "KAIST EE (Winter 2025)" },

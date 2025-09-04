@@ -54,5 +54,41 @@
     "research": "Graph neural networks, Graph Foundation Models",
     "email": "dooho@kaist.ac.kr",
     "homepage": "https://dooho00.github.io/"
+  },
+  {
+    "name": "Akotet Tesema",
+    "role": "Master's Student",
+    "image": "images/akotet.jpg",
+    "research": "GNNs, Recommender Systems",
+    "email": "tesema.akotet@kaist.ac.kr",
+    "homepage": "https://akotet.super.site/"
+  },
+  {
+    "name": "Biniyam Aschalew",
+    "role": "Master's Student",
+    "image": "images/bini.jpeg",
+    "research": "Transfer Learning, Graph Machine Learning, Foundational Models",
+    "email": "binasc@kaist.ac.kr"
+  },
+  {
+    "name": "Jaehyun Lee",
+    "role": "Master's Student",
+    "image": "images/jaehyun.jpg",
+    "research": "Knowledge Graph, Self-Supervised Learning on Graphs",
+    "email": "jason7173@kaist.ac.kr"
+  },
+  {
+    "name": "Moongi Choi",
+    "role": "Master's Student",
+    "image": "images/moongi.jpg",
+    "research": "Multivariable Time Series (Long Term Forecasting)",
+    "email": "pinkcloud@kaist.ac.kr"
+  },
+  {
+    "name": "Jongbok Lee",
+    "role": "Master's Student",
+    "image": "images/jongbok.jpg",
+    "research": "Fairness in graph recommendation system",
+    "email": "ljbassa@kaist.ac.kr"
   }
 ]

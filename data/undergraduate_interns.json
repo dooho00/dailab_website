@@ -1,14 +1,8 @@
 [
-  { "name": "Akotet Yeshaw Tesema", "association": "KAIST CS" },
   { "name": "Minho Jeong", "association": "KAIST EE" },
-  { "name": "Jaehyun Lee", "association": "KAIST EE" },
-  { "name": "Moongi Choi", "association": "KAIST EE" },
-  { "name": "Minsung Chae", "association": "KAIST EE" },
-  { "name": "Biniyam Aschalew", "association": "KAIST CS" },
-  { "name": "Jongbok Lee", "association": "KAIST EE" },
   { "name": "Hak-Beom Kim", "association": "KAIST EE" },
   { "name": "Junyeong Song", "association": "KAIST EE" },
-  { "name": "Kyuho Lee", "association": "KAIST EE" },
   { "name": "Donggeon Lee", "association": "KAIST EE" },
-  { "name": "Yunsu Park", "association": "University of Michigan" }
+  { "name": "Yunsu Park", "association": "University of Michigan" },
+  { "name": "Hojune Kim", "association": "KAIST EE" }
 ]
