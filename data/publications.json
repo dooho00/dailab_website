@@ -1,4 +1,20 @@
-[
+[ 
+  {
+    "year": "2025",
+    "title": "'Hello, World!': Making GNNs Talk with LLMs",
+    "authors": ["Sunwoo Kim", "Soo Yong Lee", "Jaemin Yoo", "Kijung Shin"],
+    "is_lab_member": [false, false, true, false],
+    "venue": "EMNLP 2025 Findings (Short)",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2505.20742",
+      "code": "https://github.com/kswoo97/GLN-Code",
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
   {
     "year": "2025",
     "title": "Self-Tuning Self-Supervised Image Anomaly Detection",
