@@ -1,6 +1,22 @@
 [ 
   {
     "year": "2025",
+    "title": "Parameter-Free Hypergraph Neural Network for Few-Shot Node Classification",
+    "authors": ["Chaewoon Bae", "Doyun Choi", "Jaehyun Lee", "Jaemin Yoo"],
+    "is_lab_member": [true, true, true, true],
+    "venue": "NeurIPS 2025",
+    "links": {
+      "paper": null,
+      "code": null,
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
+  {
+    "year": "2025",
     "title": "'Hello, World!': Making GNNs Talk with LLMs",
     "authors": ["Sunwoo Kim", "Soo Yong Lee", "Jaemin Yoo", "Kijung Shin"],
     "is_lab_member": [false, false, true, false],
