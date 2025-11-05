@@ -1,4 +1,20 @@
-[ 
+[
+  {
+    "year": "2025",
+    "title": "Simple and Behavior-Driven Augmentation for Recommendation with Rich Collaborative Signals",
+    "authors": ["Doyun Choi", "Cheonwoo Lee", "Jaemin Yoo"],
+    "is_lab_member": [true, true, true],
+    "venue": "BigData 2025 (Short)",
+    "links": {
+      "paper": "https://arxiv.org/pdf/2511.00436",
+      "code": "https://github.com/cdy9777/SCAR",
+      "bib": null,
+      "slides": null,
+      "video": null,
+      "web": null,
+      "poster": null
+    }
+  },
   {
     "year": "2025",
     "title": "Parameter-Free Hypergraph Neural Network for Few-Shot Node Classification",
@@ -6,8 +22,8 @@
     "is_lab_member": [true, true, true, true],
     "venue": "NeurIPS 2025",
     "links": {
-      "paper": null,
-      "code": null,
+      "paper": "https://arxiv.org/abs/2510.21462",
+      "code": "https://github.com/chaewoonbae/ZEN",
       "bib": null,
       "slides": null,
       "video": null,

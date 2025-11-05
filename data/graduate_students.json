@@ -43,9 +43,9 @@
     "name": "Chaewoon Bae",
     "role": "Master's Student",
     "image": "images/chaewoon.jpg",
-    "research": "Self-supervised learning on hypergraphs",
+    "research": "Graph and hypergraph learning",
     "email": "cw1203@kaist.ac.kr",
-    "homepage": ""
+    "homepage": "https://chaewoonbae.github.io/"
   },
   {
     "name": "Dooho Lee",
